@@ -1,5 +1,5 @@
 server{
-	listen 80;
+	listen {{ .Env.NGINX_PORT }};
 	index index.php index.html;
 	root /var/www/public;
 
