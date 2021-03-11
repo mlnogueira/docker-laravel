@@ -1,5 +1,6 @@
 server{
 	listen {{ .Env.NGINX_PORT }};
+	server_name {{ .Env.NGINX_HOST }};
 	index index.php index.html;
 	root /var/www/public;
 
